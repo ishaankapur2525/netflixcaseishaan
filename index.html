@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India Market Expansion Strategy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide Navigation -->
+        <div class="slide-navigation">
+            <div class="nav-controls">
+                <button id="prevSlide" class="btn btn--outline btn--sm">← Previous</button>
+                <span id="slideCounter" class="slide-counter">1 / 7</span>
+                <button id="nextSlide" class="btn btn--primary btn--sm">Next →</button>
+            </div>
+        </div>
+
+        <!-- Slide 1: Executive Summary -->
+        <div class="slide active" id="slide-1">
+            <div class="slide-header">
+                <h1>Netflix should prioritize India expansion with localized pricing and content strategy</h1>
+                <div class="slide-subtitle">Executive Summary - Strategic Recommendation</div>
+            </div>
+            <div class="slide-content">
+                <div class="scqa-framework">
+                    <div class="scqa-section">
+                        <h3>Situation</h3>
+                        <p>Netflix faces growth saturation in US/Canada markets, requiring international expansion to maintain growth momentum</p>
+                    </div>
+                    <div class="scqa-section">
+                        <h3>Complication</h3>
+                        <p>Emerging markets present complex challenges: price sensitivity, regulatory hurdles, and intense local competition</p>
+                    </div>
+                    <div class="scqa-section">
+                        <h3>Question</h3>
+                        <p>Which international market offers the best growth opportunity while mitigating expansion risks?</p>
+                    </div>
+                    <div class="scqa-section">
+                        <h3>Answer</h3>
+                        <div class="recommendation-box">
+                            <h4>Recommendation: Enter India market within 6 months</h4>
+                            <ul>
+                                <li><strong>Market size:</strong> 200M broadband households (2.5x Brazil, 5x Germany)</li>
+                                <li><strong>Growth potential:</strong> 15% internet growth rate, only 5% Netflix penetration</li>
+                                <li><strong>Quick entry:</strong> 6-month time to market vs 12 months for other markets</li>
+                                <li><strong>Strategic imperative:</strong> First-mover advantage in world's largest streaming opportunity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Market Attractiveness & BCG Matrix -->
+        <div class="slide" id="slide-2">
+            <div class="slide-header">
+                <h1>India represents a "Question Mark" with highest growth potential</h1>
+                <div class="slide-subtitle">Market Attractiveness & BCG Matrix Analysis</div>
+            </div>
+            <div class="slide-content">
+                <div class="content-grid">
+                    <div class="chart-section">
+                        <h3>BCG Matrix: Market Positioning</h3>
+                        <div class="chart-container" style="position: relative; height: 400px;">
+                            <canvas id="bcgMatrix"></canvas>
+                        </div>
+                    </div>
+                    <div class="insights-section">
+                        <h3>Key Market Insights</h3>
+                        <div class="metric-cards">
+                            <div class="metric-card">
+                                <div class="metric-value">200M</div>
+                                <div class="metric-label">Broadband Households (India)</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">15%</div>
+                                <div class="metric-label">Internet Growth Rate</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">5%</div>
+                                <div class="metric-label">Current Netflix Penetration</div>
+                            </div>
+                        </div>
+                        <div class="market-comparison">
+                            <h4>Market Size Comparison</h4>
+                            <div class="comparison-bars">
+                                <div class="bar-item">
+                                    <span class="bar-label">India</span>
+                                    <div class="bar"><div class="bar-fill" style="width: 100%;">200M</div></div>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="bar-label">Brazil</span>
+                                    <div class="bar"><div class="bar-fill" style="width: 40%;">80M</div></div>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="bar-label">Germany</span>
+                                    <div class="bar"><div class="bar-fill" style="width: 20%;">40M</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Competitive & Regulatory Forces -->
+        <div class="slide" id="slide-3">
+            <div class="slide-header">
+                <h1>High competition intensity offset by regulatory advantages and market timing</h1>
+                <div class="slide-subtitle">Porter's Five Forces Analysis - India Market</div>
+            </div>
+            <div class="slide-content">
+                <div class="forces-analysis">
+                    <div class="force-item">
+                        <h3>🏢 Competitive Rivalry</h3>
+                        <div class="force-rating high">HIGH</div>
+                        <p>10+ local competitors (Hotstar, ZEE5, SonyLIV) with strong content libraries and local market knowledge</p>
+                    </div>
+                    <div class="force-item">
+                        <h3>🚪 Barriers to Entry</h3>
+                        <div class="force-rating medium">MEDIUM</div>
+                        <p>$5M compliance costs, 30-day approval delays, but 6-month time to market is advantageous</p>
+                    </div>
+                    <div class="force-item">
+                        <h3>💰 Buyer Power</h3>
+                        <div class="force-rating high">HIGH</div>
+                        <p>Price-sensitive market demanding $4 average subscription vs $12 in Germany</p>
+                    </div>
+                    <div class="force-item">
+                        <h3>🤝 Supplier Power</h3>
+                        <div class="force-rating medium">MEDIUM</div>
+                        <p>Local content creation at $50K/hour (50% lower than Germany) provides cost advantage</p>
+                    </div>
+                    <div class="force-item">
+                        <h3>🔄 Substitutes</h3>
+                        <div class="force-rating high">HIGH</div>
+                        <p>Free-to-air TV, piracy, and ad-supported models create substitute pressure</p>
+                    </div>
+                </div>
+                <div class="competitive-landscape">
+                    <h3>Competitive Landscape Comparison</h3>
+                    <div class="landscape-chart">
+                        <div class="landscape-item">
+                            <span class="country">India</span>
+                            <span class="competitors">10+ competitors</span>
+                            <span class="risk-level high">High Intensity</span>
+                        </div>
+                        <div class="landscape-item">
+                            <span class="country">Brazil</span>
+                            <span class="competitors">3 competitors</span>
+                            <span class="risk-level medium">Medium Intensity</span>
+                        </div>
+                        <div class="landscape-item">
+                            <span class="country">Germany</span>
+                            <span class="competitors">5 competitors</span>
+                            <span class="risk-level medium">Medium Intensity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Business Model & Pricing Innovation -->
+        <div class="slide" id="slide-4">
+            <div class="slide-header">
+                <h1>Tiered pricing strategy required to penetrate price-sensitive market</h1>
+                <div class="slide-subtitle">Business Model & Pricing Benchmarking</div>
+            </div>
+            <div class="slide-content">
+                <div class="pricing-analysis">
+                    <div class="pricing-comparison">
+                        <h3>Current Pricing vs Market Benchmarks</h3>
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="pricingChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="business-model-innovation">
+                        <h3>Recommended Pricing Strategy</h3>
+                        <div class="pricing-tiers">
+                            <div class="tier">
+                                <h4>Mobile-Only</h4>
+                                <div class="price">$2/month</div>
+                                <ul>
+                                    <li>Single screen</li>
+                                    <li>Mobile/tablet only</li>
+                                    <li>Standard definition</li>
+                                </ul>
+                            </div>
+                            <div class="tier featured">
+                                <h4>Standard</h4>
+                                <div class="price">$4/month</div>
+                                <ul>
+                                    <li>2 screens</li>
+                                    <li>All devices</li>
+                                    <li>HD quality</li>
+                                </ul>
+                            </div>
+                            <div class="tier">
+                                <h4>Premium</h4>
+                                <div class="price">$6/month</div>
+                                <ul>
+                                    <li>4 screens</li>
+                                    <li>Ultra HD</li>
+                                    <li>Downloads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="financial-metrics">
+                    <h3>Key Financial Metrics Comparison</h3>
+                    <div class="metrics-table">
+                        <div class="table-header">
+                            <span>Market</span>
+                            <span>ARPU</span>
+                            <span>CAC</span>
+                            <span>Churn Rate</span>
+                            <span>Operating Margin</span>
+                        </div>
+                        <div class="table-row">
+                            <span>India</span>
+                            <span>$5</span>
+                            <span>$30</span>
+                            <span>8%</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="table-row">
+                            <span>Brazil</span>
+                            <span>$8</span>
+                            <span>$40</span>
+                            <span>5%</span>
+                            <span>15%</span>
+                        </div>
+                        <div class="table-row">
+                            <span>Germany</span>
+                            <span>$13</span>
+                            <span>$50</span>
+                            <span>4%</span>
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Content Localization & Partnership Model -->
+        <div class="slide" id="slide-5">
+            <div class="slide-header">
+                <h1>30% local content strategy delivers 3x ROI and 60% user engagement</h1>
+                <div class="slide-subtitle">Content Localization & Strategic Partnership Framework</div>
+            </div>
+            <div class="slide-content">
+                <div class="content-strategy">
+                    <div class="content-metrics">
+                        <h3>Content Investment Strategy</h3>
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="contentROIChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="partnership-model">
+                        <h3>Strategic Partnership Framework</h3>
+                        <div class="partnership-tiers">
+                            <div class="partnership">
+                                <h4>Content Partners</h4>
+                                <ul>
+                                    <li>Bollywood studios (YRF, Dharma)</li>
+                                    <li>Regional content creators</li>
+                                    <li>Independent filmmakers</li>
+                                </ul>
+                            </div>
+                            <div class="partnership">
+                                <h4>Distribution Partners</h4>
+                                <ul>
+                                    <li>Telecom operators (Jio, Airtel)</li>
+                                    <li>Internet service providers</li>
+                                    <li>Mobile payment platforms</li>
+                                </ul>
+                            </div>
+                            <div class="partnership">
+                                <h4>Technology Partners</h4>
+                                <ul>
+                                    <li>CDN providers for streaming</li>
+                                    <li>Payment gateway integrations</li>
+                                    <li>Device manufacturers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="localization-benefits">
+                    <h3>Content Localization Impact</h3>
+                    <div class="benefit-metrics">
+                        <div class="benefit-card">
+                            <div class="benefit-value">3000%</div>
+                            <div class="benefit-label">Content ROI</div>
+                            <div class="benefit-desc">vs 2500% (Brazil), 2000% (Germany)</div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-value">60%</div>
+                            <div class="benefit-label">User Engagement</div>
+                            <div class="benefit-desc">Higher than Brazil (50%)</div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-value">15%</div>
+                            <div class="benefit-label">Algorithm Improvement</div>
+                            <div class="benefit-desc">Through local viewing data</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Scenario Financials & Risk Assessment -->
+        <div class="slide" id="slide-6">
+            <div class="slide-header">
+                <h1>Base case projects $2B revenue potential with manageable risk profile</h1>
+                <div class="slide-subtitle">Financial Scenarios, Risk Assessment & Key Metrics</div>
+            </div>
+            <div class="slide-content">
+                <div class="financial-scenarios">
+                    <div class="scenarios-chart">
+                        <h3>5-Year Revenue Projections (USD Millions)</h3>
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="scenarioChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="risk-assessment">
+                        <h3>Risk Assessment Matrix</h3>
+                        <div class="risk-items">
+                            <div class="risk-item">
+                                <span class="risk-factor">Geopolitical Risk</span>
+                                <span class="risk-level medium">Medium (7/10)</span>
+                                <span class="mitigation">Local partnerships, compliance</span>
+                            </div>
+                            <div class="risk-item">
+                                <span class="risk-factor">Competitive Pressure</span>
+                                <span class="risk-level high">High</span>
+                                <span class="mitigation">Differentiated content, pricing</span>
+                            </div>
+                            <div class="risk-item">
+                                <span class="risk-factor">Regulatory Changes</span>
+                                <span class="risk-level medium">Medium</span>
+                                <span class="mitigation">$5M compliance buffer</span>
+                            </div>
+                            <div class="risk-item">
+                                <span class="risk-factor">Content Restrictions</span>
+                                <span class="risk-level medium">Medium (10 restrictions)</span>
+                                <span class="mitigation">Local content review board</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="key-metrics">
+                    <h3>Key Success Metrics</h3>
+                    <div class="metrics-dashboard">
+                        <div class="metric-group">
+                            <h4>Growth Metrics</h4>
+                            <ul>
+                                <li>Target: 20M subscribers by Year 3</li>
+                                <li>Market penetration: 10% of broadband households</li>
+                                <li>Monthly growth rate: 15%+</li>
+                            </ul>
+                        </div>
+                        <div class="metric-group">
+                            <h4>Financial Metrics</h4>
+                            <ul>
+                                <li>Break-even: Month 18</li>
+                                <li>ROI: 25%+ by Year 3</li>
+                                <li>Churn reduction: <6% monthly</li>
+                            </ul>
+                        </div>
+                        <div class="metric-group">
+                            <h4>Operational Metrics</h4>
+                            <ul>
+                                <li>Content localization: 30%+ local</li>
+                                <li>Customer satisfaction: 4.0+ rating</li>
+                                <li>Platform reliability: 99.9% uptime</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Final Recommendations -->
+        <div class="slide" id="slide-7">
+            <div class="slide-header">
+                <h1>Execute India expansion with mobile-first strategy and local partnerships</h1>
+                <div class="slide-subtitle">Final Recommendations & Implementation Roadmap</div>
+            </div>
+            <div class="slide-content">
+                <div class="recommendations">
+                    <div class="recommendation-section">
+                        <h3>Phase 1: Market Entry (Months 1-6)</h3>
+                        <div class="action-items">
+                            <div class="action-item">
+                                <span class="action-number">1</span>
+                                <div class="action-content">
+                                    <h4>Launch mobile-only tier at $2/month</h4>
+                                    <p>Capture price-sensitive segment, 50% of initial subscribers expected</p>
+                                </div>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-number">2</span>
+                                <div class="action-content">
+                                    <h4>Establish content partnerships</h4>
+                                    <p>Sign 3-5 major Bollywood studios, target 30% local content by Month 12</p>
+                                </div>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-number">3</span>
+                                <div class="action-content">
+                                    <h4>Set up regulatory compliance</h4>
+                                    <p>Invest $5M in compliance infrastructure, local content review board</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-section">
+                        <h3>Phase 2: Scale & Optimize (Months 7-18)</h3>
+                        <div class="action-items">
+                            <div class="action-item">
+                                <span class="action-number">4</span>
+                                <div class="action-content">
+                                    <h4>Expand content library</h4>
+                                    <p>Invest $200M in local originals, target 3000% content ROI</p>
+                                </div>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-number">5</span>
+                                <div class="action-content">
+                                    <h4>Optimize pricing strategy</h4>
+                                    <p>A/B test pricing tiers, target churn reduction to <6%</p>
+                                </div>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-number">6</span>
+                                <div class="action-content">
+                                    <h4>Build distribution partnerships</h4>
+                                    <p>Partner with Jio, Airtel for bundled offerings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="success-factors">
+                    <h3>Critical Success Factors</h3>
+                    <div class="success-grid">
+                        <div class="success-factor">
+                            <h4>🎯 Local Content Excellence</h4>
+                            <p>Invest heavily in Hindi and regional language originals</p>
+                        </div>
+                        <div class="success-factor">
+                            <h4>💡 Mobile-First Innovation</h4>
+                            <p>Optimize for mobile viewing and low-bandwidth environments</p>
+                        </div>
+                        <div class="success-factor">
+                            <h4>🤝 Strategic Partnerships</h4>
+                            <p>Leverage telecom and content partnerships for scale</p>
+                        </div>
+                        <div class="success-factor">
+                            <h4>⚡ Speed to Market</h4>
+                            <p>Capitalize on 6-month advantage vs other markets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-steps">
+                    <h3>Immediate Next Steps (Next 30 Days)</h3>
+                    <ol>
+                        <li>Secure board approval for $500M India expansion budget</li>
+                        <li>Establish India subsidiary and hire country manager</li>
+                        <li>Begin negotiations with top 5 content partners</li>
+                        <li>Initiate regulatory filing and compliance processes</li>
+                        <li>Develop mobile-first platform architecture</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
